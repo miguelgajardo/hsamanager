@@ -1,0 +1,347 @@
+.body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.main {
+    z-index: 900;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease-in;
+  
+}
+
+.navbar {
+    padding: .5rem 0rem !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: azure !important;
+    font-weight: 300;
+
+}
+ 
+.bg-white {
+    background: white;
+}
+
+.rounded-card {
+    border-radius: 15px !important; 
+    border: 1px transparent solid !important;
+}
+
+
+.shadow-box {
+   box-shadow:0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+.shadow-min-box {
+    box-shadow:0 1rem 2rem rgba(0,0,0,.175)!important;
+ }
+
+.btn.btn-orangered {
+    background: #f6f6f6;
+}
+
+.btn.btn-orangered:focus, .btn.btn-orangered.focus, .btn.btn-orangered:focus, .btn.btn-orangered.focus {
+    background: orangered;
+    color: white;
+    border-color: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.carousel {
+    min-height: 700px;
+    z-index: 1000;
+}
+
+.carousel-data {
+    float: left;
+    margin-top: 17%;
+    left:120px;
+}
+
+.reddy {
+    color: orangered;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 0;
+    text-align: center !important;
+    width: 100%;
+}
+
+.buttonspan  {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.btn.btn-light {
+    min-width: 200px;
+    display: inline-block !important;
+    height: 70px;
+    padding: 2rem;
+    margin-left: 5px;
+    bottom: 0;
+    transition: all 0.3s ease-in;
+    border-radius: 4px 4px 0 0;
+    background: #f6f6f6;
+    border-color: none;
+    border: none;
+}
+
+
+.btn.btn-danger {
+    min-width: 200px;
+    display: inline-block !important;
+    height: 70px;
+    padding: 2rem;
+    margin-left: 5px;
+    bottom: 0;
+    transition: all 0.3s ease-in;
+    border-radius: 4px 4px 0 0;
+    background: orangered;
+    border-color: none;
+    border: none;
+
+}
+
+.gray-light-bg {
+    background: #f6f6f6;
+}
+
+
+.btn.btn-light:focus span, .btn.btn-light.focus span, .btn.btn-danger:focus span, .btn.btn-danger.focus span {
+    color: white;
+}
+
+.btn.btn-light .fa, .btn.btn-danger.focus.fa {
+    color: orangered;
+}
+
+.btn.btn-light .fas, .btn.btn-danger.focus.fas {
+    color: orangered;
+}
+
+.btn.btn-danger:focus, .btn.btn-danger.focus, .btn.btn-light:focus, .btn.btn-light.focus {
+    background: orangered;
+    border-color: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    border: none;
+}
+
+.carousel-list {
+    padding-left: 0;
+}
+
+.list-item {
+    list-style: none;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+ }
+ .list-item::before {
+    content: '';
+    margin-top:10px;
+    display: inline-block;
+    height: 16px;
+    width:16px;
+    background-image: url("../img/angle-double-right.svg");
+ }
+
+ 
+/* ESTILOS DEL TEMPLATE */
+
+.superheadline {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 100;
+}
+
+.headline {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+.carousel-paragraph {
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: white;
+}
+
+.central-img img {
+    background-color: white;
+    padding: 20px;
+    display: block;
+    border-radius: 28%;
+    width: 25%;
+}
+
+.herramientas {
+    font-weight: 300;
+}
+
+.herramientas h1 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.herramientas .card-text {
+    text-align: left;
+}
+
+.pad {
+    padding: 2.25rem !important;
+}
+
+.hover-first {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;  
+}
+
+.hover-first::before,
+.hover-first::after {
+    content: '';
+    height: 100%;
+    right: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.hover-first::before {
+    top: 80%;
+    opacity: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(40%);
+}
+
+.hover-back::before {
+    background-color: black;
+}
+
+.hover-first::after {
+    z-index: 1;
+    top: 100%;
+    background-image: linear-gradient(75deg, rgba(26, 44, 121, 0.75) 10%, rgba(232, 5, 102, 0.80));
+}
+
+.iconright {
+    float: right;
+    font-size: 0.5rem;
+    padding-top: 15px;
+}
+
+.dropright button {
+    font-size: 0.9rem !important;
+    padding-top: 15px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #393939;
+    -webkit-font-smoothing: antialiased;
+}
+
+.link-orangered:hover {
+    color: orangered !important;
+    text-transform: none !important;
+}
+
+.link-orangered:focus {
+    color: orangered !important;
+    text-transform: none !important;
+    box-shadow: none !important;
+}
+
+.gradient-blue {
+    width: 100%;
+    position: relative;
+    display: block;
+}   
+
+.gradient-blue p {
+    color: white;
+}
+
+.gradient-blue::before {
+    position: absolute;
+    width: 100%;
+    content:'';
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(75deg, rgba(26, 44, 121, 0.05) 20%, rgba(0, 153, 255, 0.7)) !important;
+}   
+
+.contact-center h1 {
+    font-weight: 300;
+    color: white;
+}
+
+.bg-transparente {
+    background: rgba(230, 88, 6, 0.678) !important;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px !important;
+}
+
+.bg-transparente img {
+    margin: auto;
+    display: block;
+}
+
+.form-group {
+    color: white !important;
+}
+
+
+.footer1 {
+    width: 100%;
+    position: relative;
+    display: block;
+}   
+
+.footer1::before {
+    position: absolute;
+    width: 100%;
+    content:'';
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(75deg, rgba(25, 51, 167, 0.88) 15%, rgba(232, 77, 5, 0.9)) !important;
+} 
+
+.tiny {
+    font-size: 0.8rem;
+}
+
+.indicator {
+    position: fixed;
+    z-index: 99999;
+    right: 1%;
+    top: 65%;
+    width: 120px;
+    font-size: 1.5em;
+}
+
+.indicator img {
+    width: 120px;
+}

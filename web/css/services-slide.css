@@ -1,0 +1,83 @@
+.template-services {
+    margin-top:30px;
+    padding-right: 40px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.template-services h3 {
+    font-size: 1rem;
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+.template-services p {
+    font-size: 1rem;
+    font-family: 'Montserrat',sans-serif;
+    color: #666;
+}
+
+.template-services h2 {
+    font-size: 2.5rem;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.central-icon {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: inline-block;
+    line-height: 60px;
+    background: orangered;
+    border-radius: 50%;
+    text-align: center !important;
+}
+
+.central-icon img {
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+
+}
+
+.card-title {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.card-services {
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    background: white;
+    color: #666;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.template-services li {
+    line-height: 30px;
+    list-style: none;
+}
+
+.template-services li::before {
+    content: '';
+    margin-top:10px;
+    display: inline-block;
+    height: 16px;
+    width:16px;
+    background-image: url("../img/angle-double-right-orangered.svg");
+ }
+
+ .template-services ul {
+    padding-inline-start: 0 !important;
+ }
+
+ .btn-servicio {
+    background: none;
+}
+
