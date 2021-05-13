@@ -17,7 +17,7 @@ a Model View Controller pattern, with data access objects, servlet controllers, 
 
 <ul>
     <li>A sophisticated framework developed system.</li>
-    <li>A persistence data application.</li>
+    <li>An ORM persistence data application.</li>
     <li>A Rest API.</li>
     <li>A separated backend-frontend system.</li>
     <li>A Locale formatted implementation.</li>
