@@ -458,7 +458,7 @@ public class AdminControl extends HttpServlet {
                     CloudStorage cloud = new CloudStorage();
                     try {
                         RemuneracionDAO.deleteRemuneracion(fechasql, id_cc);
-                        CloudStorage.deleteObject("hsamanager", "hsamanager_uploads", documento);
+                        CloudStorage.deleteObject("loud_project", "bucket_name", documento);
                     } catch (Exception e) {
                         System.out.println("Error al eliminar");
                         e.printStackTrace();
@@ -489,7 +489,7 @@ public class AdminControl extends HttpServlet {
 
                 case "enviar":
                     System.out.println("Mensaje Enviado");
-                    response.sendRedirect("https://hsa-auditores.cl");
+                    response.sendRedirect("https://sitio web por defecto");
 
                 default:
                     System.out.print("Error al Procesar");
