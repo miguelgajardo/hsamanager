@@ -75,7 +75,7 @@ System.out.println("Todas las remuneraciones PENDIENTES DEL MES: " + remuneracio
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>HSA Auditores - Panel de Empresas</title>
 <!-- FONT-AWESOME CSS -->
-<link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
+<link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"
 	type="text/css">
 <!-- GOOGLE FONTS CSS -->
 <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -131,7 +131,7 @@ System.out.println("Todas las remuneraciones PENDIENTES DEL MES: " + remuneracio
 						</div>
 					
 						<div class="col-auto">
-						<i class="fas fa-fw fa-building fa-2x text-gray-300"></i>
+						<i class="fa fa-fw fa-building fa-2x text-gray-300"></i>
 						</div>
 					</div>
 				</div>
@@ -152,7 +152,7 @@ System.out.println("Todas las remuneraciones PENDIENTES DEL MES: " + remuneracio
 							</div>
 						</div>
 						<div class="col-auto">
-							<i class="fas fa-users fa-2x text-gray-300"></i>
+							<i class="fa fa-users fa-2x text-gray-300"></i>
 						</div>
 					</div>
 				</div>
@@ -174,7 +174,7 @@ System.out.println("Todas las remuneraciones PENDIENTES DEL MES: " + remuneracio
 							</div>
 						</div>
 						<div class="col-auto">
-							<i class="fas fa-fw fa-id-badge fa-2x text-gray-300"></i>
+							<i class="fa fa-fw fa-id-badge fa-2x text-gray-300"></i>
 						</div>
 					</div>
 				</div>
@@ -196,7 +196,7 @@ System.out.println("Todas las remuneraciones PENDIENTES DEL MES: " + remuneracio
 							</div>
 						</div>
 						<div class="col-auto">
-							<i class="fas fa-file-pdf fa-2x text-gray-300"></i>
+							<i class="fa fa-file-pdf fa-2x text-gray-300"></i>
 						</div>
 					</div>
 				</div>
@@ -251,7 +251,7 @@ System.out.println("Todas las remuneraciones PENDIENTES DEL MES: " + remuneracio
 								<td><%= empresa.getUsuario() %>
 								</td>
 								<td>
-									<a type="button" class="btn btn-warning btn-sm" href="/Usuario/remuneraciones?go_to=remuneraciones_empresa&rut_empresa=<%= empresa.getRut() %>"><i class="fas fa-file-pdf"></i> Remuneraciones</a>
+									<a type="button" class="btn btn-warning btn-sm" href="/Usuario/remuneraciones?go_to=remuneraciones_empresa&rut_empresa=<%= empresa.getRut() %>"><i class="fa fa-file-pdf"></i> Remuneraciones</a>
 								</td>
 							</tr>
 						<% } %>
@@ -283,7 +283,7 @@ System.out.println("Todas las remuneraciones PENDIENTES DEL MES: " + remuneracio
 <!-- / Page Wrapper -->
 
 	<!-- Scroll to Top Button-->
-	<a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+	<a class="scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
 
 	<!-- Logout Modal-->
 	

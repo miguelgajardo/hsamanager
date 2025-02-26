@@ -38,7 +38,7 @@ String periodoActual = currentMonth.substring(0, 1).toUpperCase() + currentMonth
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>HSA Auditores - Panel de Administración</title>
 <!-- FONT-AWESOME CSS -->
-<link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
+<link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"
 	type="text/css">
 <!-- GOOGLE FONTS CSS -->
 <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -94,7 +94,7 @@ String periodoActual = currentMonth.substring(0, 1).toUpperCase() + currentMonth
 						</div>
 					
 						<div class="col-auto">
-						<i class="fas fa-fw fa-building fa-2x text-gray-300"></i>
+						<i class="fa fa-fw fa-building fa-2x text-gray-300"></i>
 						</div>
 					</div>
 				</div>
@@ -116,7 +116,7 @@ String periodoActual = currentMonth.substring(0, 1).toUpperCase() + currentMonth
 							</div>
 						</div>
 						<div class="col-auto">
-							<i class="fas fa-users fa-2x text-gray-300"></i>
+							<i class="fa fa-users fa-2x text-gray-300"></i>
 						</div>
 					</div>
 				</div>
@@ -138,7 +138,7 @@ String periodoActual = currentMonth.substring(0, 1).toUpperCase() + currentMonth
 							</div>
 						</div>
 						<div class="col-auto">
-							<i class="fas fa-fw fa-id-badge fa-2x text-gray-300"></i>
+							<i class="fa fa-fw fa-id-badge fa-2x text-gray-300"></i>
 						</div>
 					</div>
 				</div>
@@ -160,7 +160,7 @@ String periodoActual = currentMonth.substring(0, 1).toUpperCase() + currentMonth
 							</div>
 						</div>
 						<div class="col-auto">
-							<i class="fas fa-file-pdf fa-2x text-gray-300"></i>
+							<i class="fa fa-file-pdf fa-2x text-gray-300"></i>
 						</div>
 					</div>
 				</div>
@@ -254,11 +254,12 @@ String periodoActual = currentMonth.substring(0, 1).toUpperCase() + currentMonth
 									Administrar
 									</a>
 									<a class="btn btn-secondary" 
-									href="/Admin/adminempresas?go_to=modificar_empresa&rut_empresa=<%= empresa.getRut() %>"><i class="fas fa-edit"></i>
+									href="/Admin/adminempresas?go_to=modificar_empresa&rut_empresa=<%= empresa.getRut() %>"><i class="fa fa-edit"></i>
+									Editar
 									</a>
 									<a class="btn btn-secondary" 
-									href="/Admin/adminempresas?go_to=eliminar_empresa&rut_empresa=<%= empresa.getRut() %>"><i class="fas fa-trash-alt"></i>
-									</a>
+									href="/Admin/adminempresas?go_to=eliminar_empresa&rut_empresa=<%= empresa.getRut() %>"><i class="fa fa-trash-alt"></i>
+									Eliminar</a>
 								</td>
 							</tr>
 						<% } %>
@@ -290,7 +291,7 @@ String periodoActual = currentMonth.substring(0, 1).toUpperCase() + currentMonth
 <!-- / Page Wrapper -->
 
 	<!-- Scroll to Top Button-->
-	<a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+	<a class="scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
 
 	<!-- Logout Modal-->
 	

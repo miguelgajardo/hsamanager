@@ -1,116 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
-    <security-constraint>
-        <web-resource-collection>
-            <url-pattern>/*</url-pattern>
-        </web-resource-collection>
-        <user-data-constraint>
-            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
-        </user-data-constraint>
-    </security-constraint>
-    <display-name>cl.hsaauditores.hsamanager</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-    <session-config>
-        <session-timeout>30</session-timeout>
-    </session-config>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+	<security-constraint>
+		<web-resource-collection>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<user-data-constraint>
+		<transport-guarantee>NONE</transport-guarantee>
+			<!-- <transport-guarantee>CONFIDENTIAL</transport-guarantee> -->
+		</user-data-constraint>
+	</security-constraint>
+	<display-name>cl.hsaauditores.hsamanager</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
 
-    <servlet>
-    <servlet-name>LoginControl</servlet-name>
-    <servlet-class>controlador.LoginControl</servlet-class>
-</servlet>
-<servlet-mapping>
-    <servlet-name>LoginControl</servlet-name>
-    <url-pattern>/Login/logincontrol</url-pattern>
-</servlet-mapping>
-<servlet-mapping>
-    <servlet-name>LoginControl</servlet-name>
-    <url-pattern>/Logout/logoutcontrol</url-pattern>
-</servlet-mapping>
-<servlet-mapping>
-    <servlet-name>LoginControl</servlet-name>
-    <url-pattern>/Login/loginform</url-pattern>
-</servlet-mapping>
-  <servlet>
-    <servlet-name>AdminControl</servlet-name>
-    <servlet-class>controlador.AdminControl</servlet-class>
-</servlet>
-<servlet-mapping>
-    <servlet-name>AdminControl</servlet-name>
-    <url-pattern>/Admin/admincontrol</url-pattern>
-</servlet-mapping>
-<servlet-mapping>
-    <servlet-name>AdminControl</servlet-name>
-    <url-pattern>/Admin/adminempresas</url-pattern>
-</servlet-mapping>
-<servlet-mapping>
-    <servlet-name>AdminControl</servlet-name>
-    <url-pattern>/Admin/admintrabajadores</url-pattern>
-</servlet-mapping>
-<servlet-mapping>
-    <servlet-name>AdminControl</servlet-name>
-    <url-pattern>/Admin/adminusuarios</url-pattern>
-</servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AdminControl</servlet-name>
-        <url-pattern>/Admin/admincc</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AdminControl</servlet-name>
-        <url-pattern>/Admin/contacto</url-pattern>
-    </servlet-mapping>
- <servlet>
-    <servlet-name>UserControl</servlet-name>
-    <servlet-class>controlador.UserControl</servlet-class>
-</servlet>
-<servlet-mapping>
-    <servlet-name>UserControl</servlet-name>
-    <url-pattern>/Usuario/usercontrol</url-pattern>
-</servlet-mapping>
-<servlet-mapping>
-    <servlet-name>UserControl</servlet-name>
-    <url-pattern>/Usuario/usuarioempresas</url-pattern>
-</servlet-mapping>
-<servlet-mapping>
-    <servlet-name>UserControl</servlet-name>
-    <url-pattern>/Usuario/remuneraciones</url-pattern>
-</servlet-mapping>
-<servlet-mapping>
-    <servlet-name>UserControl</servlet-name>
-    <url-pattern>/Usuario/trabajadores</url-pattern>
-</servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>UserControl</servlet-name>
-        <url-pattern>/Usuario/centrosdecosto</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>Uploader</servlet-name>
-        <servlet-class>controlador.Uploader</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Uploader</servlet-name>
-        <url-pattern>/Upload/uploader</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>Contacto</servlet-name>
-        <servlet-class>controlador.Contacto</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Contacto</servlet-name>
-        <url-pattern>index.jsp/contacto</url-pattern>
-    </servlet-mapping>
-<error-page>
-<error-code>404</error-code>
-<location>/WEB-INF/error.jsp</location>
-</error-page>
-    <context-param>
-        <param-name>miProyectoJava.bucket</param-name>
-        <param-value>${bucket_nombre.bucket}</param-value>
-    </context-param>
+	<servlet>
+		<servlet-name>LoginControl</servlet-name>
+		<servlet-class>controlador.LoginControl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginControl</servlet-name>
+		<url-pattern>/Login/logincontrol</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginControl</servlet-name>
+		<url-pattern>/Logout/logoutcontrol</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginControl</servlet-name>
+		<url-pattern>/Login/loginform</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AdminControl</servlet-name>
+		<servlet-class>controlador.AdminControl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminControl</servlet-name>
+		<url-pattern>/Admin/admincontrol</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminControl</servlet-name>
+		<url-pattern>/Admin/adminempresas</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminControl</servlet-name>
+		<url-pattern>/Admin/admintrabajadores</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminControl</servlet-name>
+		<url-pattern>/Admin/adminusuarios</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminControl</servlet-name>
+		<url-pattern>/Admin/admincc</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminControl</servlet-name>
+		<url-pattern>/Admin/contacto</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UserControl</servlet-name>
+		<servlet-class>controlador.UserControl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserControl</servlet-name>
+		<url-pattern>/Usuario/usercontrol</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserControl</servlet-name>
+		<url-pattern>/Usuario/usuarioempresas</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserControl</servlet-name>
+		<url-pattern>/Usuario/remuneraciones</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserControl</servlet-name>
+		<url-pattern>/Usuario/trabajadores</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserControl</servlet-name>
+		<url-pattern>/Usuario/centrosdecosto</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Uploader</servlet-name>
+		<servlet-class>controlador.Uploader</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Uploader</servlet-name>
+		<url-pattern>/Upload/uploader</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Contacto</servlet-name>
+		<servlet-class>controlador.Contacto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Contacto</servlet-name>
+		<url-pattern>/Contacto/contacto</url-pattern>
+	</servlet-mapping>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/error.jsp</location>
+	</error-page>
+	<context-param>
+		<param-name>miProyectoJava.bucket</param-name>
+		<param-value>${bucket_nombre.bucket}</param-value>
+	</context-param>
 </web-app>

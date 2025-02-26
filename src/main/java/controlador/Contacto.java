@@ -20,7 +20,8 @@ import java.util.Properties;
 
 @WebServlet(name = "Contacto",
         description = "Controlador de Tareas de Contacto",
-        urlPatterns = {"index.jsp/contacto"})
+        urlPatterns = {"/Contacto/contacto"})
+        //urlPatterns = {"Contacto/contacto"})
 
 /**
  * Servlet que permite controlar el envío de correos electrónicos para fines de contacto corporativo,
@@ -34,23 +35,23 @@ public class Contacto extends HttpServlet {
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        request.setCharacterEncoding("UTF-8");
-        if (request.getParameter("send") != null && request.getParameter("send").equals("enviar")) {
-           String receptorMail = "contacto@infograf.cl";
-           String nombre = request.getParameter("nombre");
-           String email = request.getParameter("email");
-           String telefono = request.getParameter("ciudad");
-           String mensaje = request.getParameter("mensaje");
-           String sending = "HSA Manager - Nuevo mensaje desde sitio web" +
-                   "Nombre: " + nombre +
-                   "E-mail: " + email +
-                   "Teléfono: " + telefono +
-                   "Mensaje: " + mensaje;
-            Mail.sendMail(receptorMail ,sending);
-            request.setAttribute("envioexitoso", 1);
-            response.sendRedirect("URL para redigir ");
-        }
-    }
+//    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        response.setContentType("text/html;charset=UTF-8");
+//        request.setCharacterEncoding("UTF-8");
+//        if (request.getParameter("send") != null && request.getParameter("send").equals("enviar")) {
+//           String receptorMail = "contacto@infograf.cl";
+//           String nombre = request.getParameter("nombre");
+//           String email = request.getParameter("email");
+//           String telefono = request.getParameter("ciudad");
+//           String mensaje = request.getParameter("mensaje");
+//           String sending = "HSA Manager - Nuevo mensaje desde sitio web" +
+//                   "Nombre: " + nombre +
+//                   "E-mail: " + email +
+//                   "Teléfono: " + telefono +
+//                   "Mensaje: " + mensaje;
+//            Mail.sendMail(receptorMail ,sending);
+//            request.setAttribute("envioexitoso", 1);
+//            response.sendRedirect("URL para redigir ");
+//        }
+//    }
 }

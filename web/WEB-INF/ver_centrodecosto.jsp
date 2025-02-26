@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ver <%= cc.getNombre() %> - HSA Auditores</title>
     <!-- FONT-AWESOME CSS -->
-    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"
           type="text/css">
     <!-- GOOGLE FONTS CSS -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -142,7 +142,7 @@
                                             <td><%= cc.getNombre() %></td>
                                             <td><%= remuneracion.mostrarPeriodo() %></td>
                                             <td>
-                                                <a class="btn btn-warning" href="<%= remuneracion.getUrl() %>"><i class="fas fa-cloud-download-alt"></i> Ver</a>
+                                                <a class="btn btn-warning" href="<%= remuneracion.getUrl() %>"><i class="fa fa-cloud-download-alt"></i> Ver</a>
                                             </td>
                                         </tr>
                                         <% } %>
@@ -175,7 +175,7 @@
 <!-- End of Page Wrapper -->
 
 <!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="#page-top"> <i class="fas fa-angle-up"></i></a>
+<a class="scroll-to-top rounded" href="#page-top"> <i class="fa fa-angle-up"></i></a>
 
 <!-- Logout Modal-->
 

@@ -70,7 +70,9 @@ a Model View Controller pattern, with data access objects, servlet controllers, 
 <h3>Screenshots</h3>
 <h4>Principal Dashboard</h4>
 <div>
-    <img src="https://mgimgsgitrepository.s3-us-west-1.amazonaws.com/vista_principal_admin.png">
+    - **Branches (SUCURSALES) top area con botones de menu y salir**
+
+![Dashboard](/web/img/principal_dashboard.png)
 </div>
 <h4>Created Worker View</h4>
 <div>

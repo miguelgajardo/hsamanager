@@ -47,14 +47,17 @@ public class AdminConexion {
 
         //Información de la base de datos MySQL.
 
-        final String dbUsuario = "";
+        final String dbUsuario = "dev_apis_user";
 
-        final String dbCredencial = "";
+        final String dbCredencial = "dev_apis_user";
 
-        final String jdbcUrl = "jdbc:mysql://google/" + idProyecto + "?cloudSqlInstance=" + idProyecto + ":" + zonaRegion + ":" + idInstancia + "&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false&user=" + dbUsuario + "&password=" + dbCredencial + "";
+        final String jdbcUrl = "jdbc:postgresql://localhost:5432/user?user=" + dbUsuario + "&password=" + dbCredencial;
+        		//"jdbc:mysql://google/" + idProyecto + "?cloudSqlInstance=" + idProyecto + ":" + zonaRegion + ":" + idInstancia + "&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false&user=" + dbUsuario + "&password=" + dbCredencial + "";
 
         try {
+        	 Class.forName("org.postgresql.Driver");
             conectar = DriverManager.getConnection(jdbcUrl);
+        	    System.out.println("Connection successful!");
         } catch (SQLException e) {
             e.printStackTrace();
         }

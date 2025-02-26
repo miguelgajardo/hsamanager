@@ -135,7 +135,7 @@ public class RemuneracionDAO {
     public static List<Remuneracion> getAllRemuneracionesMes() throws SQLException, ClassNotFoundException {
         ArrayList<Remuneracion> remuneraciones = new ArrayList<>();
         final int mesActual = LocalDate.now().getMonth().getValue();
-        String mesActualQuery = "SELECT * FROM remuneraciones where MONTH(periodo) ='" + mesActual + "'";
+        String mesActualQuery = "SELECT * FROM remuneraciones where EXTRACT(MONTH FROM periodo) ='" + mesActual + "'";
         Connection conectar = AdminConexion.conexion();
         PreparedStatement ps = conectar.prepareStatement(mesActualQuery);
         ResultSet rs = ps.executeQuery();
