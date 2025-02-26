@@ -70,7 +70,7 @@ a Model View Controller pattern, with data access objects, servlet controllers, 
 <h3>Screenshots</h3>
 <h4>Principal Dashboard</h4>
 <div>
-    - **Branches (SUCURSALES) top area con botones de menu y salir**
+    - **Dashboard Principal**
 
 ![Dashboard](/web/img/principal_dashboard.png)
 </div>
